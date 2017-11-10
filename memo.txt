@@ -1,0 +1,3 @@
+docker volume create gitbucket
+docker run -d --name strage -v gitbucket:/var/gitbucket strage
+

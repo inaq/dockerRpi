@@ -1,0 +1,9 @@
+version: '3'
+services:
+  gitbucket:
+    image: f99aq8ove/gitbucket
+    volumes_from:
+      - gitbucket
+    ports:
+      - "29418:29418"
+    command: java -jar /opt/gitbucket.war --prefix=/gitbucket
